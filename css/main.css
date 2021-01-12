@@ -1,0 +1,119 @@
+:root{
+    --laranja: #EC4E20;
+    --verde: #1C3A13;
+    --marrom: #574F2A;
+    --rosa: #FEC0AA;
+    --fonte-principal: font-family: 'Hachi Maru Pop', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-center{
+    align-items: center;
+    justify-items: center;
+    display: flex;
+}
+
+
+
+#home{
+    background-color: var(--laranja);
+    height: 100vh;
+}
+
+.container {
+    width: 1120px;
+    background-color: var(--laranja);
+    margin: 0 auto;
+    height: 100%;
+}
+
+.menu{
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+.logo{
+    color: black;
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    justify-content: flex-start;
+    width: 50%;     
+}
+
+.menu-list {
+    width: 50%;
+}
+
+.menu-list ul{
+    display:  flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: black;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    list-style: none;
+}
+
+.menu-list ul li:hover{
+    color: yellow;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-login{
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+}
+
+.btn-login:hover{
+    cursor:pointer;
+    color: yellow;
+    transition: .5s;
+}
+
+.hero{
+    height: calc(100% - 70px);
+    width: 50%;
+    flex-direction: row;
+    display: flex;
+}
+
+.hero-text{
+    font-family: var(--fonte-principal);
+    height: 100%;
+    width: 50%;
+    flex-direction:  column;
+}
+
+.hero-text p{
+    font-size: 40px;
+}
+
+.btn-hero{
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    font-family: var(--fonte-principal);
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.btn-hero:hover{
+
+}
+
+.hero-img{
+    height: 360px;
+    width: 50%;
+}
